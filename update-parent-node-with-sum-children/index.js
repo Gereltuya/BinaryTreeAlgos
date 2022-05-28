@@ -3,21 +3,17 @@
 // Recursively
 
 const updateParentNode = (root) => {
+  // if the tree is empty then do nothing
   if (root === null) return
 
   if (root.left !== null || root.right !== null) {
     root.value = root.left.value + root.right.value
   }
 
-  if (root.left !== null) {
-    updateParentNode(root.left)
-  }
-
-  if (root.right !== null) {
-    updateParentNode(root.right)
-  }
+  updateParentNode(root.left)
+  updateParentNode(root.right)
 
   return root
 }
 
-module.exports = updateParentNode; 
+module.exports = updateParentNode
