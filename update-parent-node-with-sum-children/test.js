@@ -1,4 +1,4 @@
-const TreeNode = require('./treeNode')
+const TreeNode = require('../treeNode')
 const updateParentNode = require('./index')
 
 test('Parents Node Updated for Node 1, 0, 2', () => {

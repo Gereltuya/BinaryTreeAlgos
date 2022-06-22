@@ -16,4 +16,6 @@ const updateParentNode = (root) => {
   return root
 }
 
+// time complexity: 0(n)
+// space complexity: 0(n)
 module.exports = updateParentNode
